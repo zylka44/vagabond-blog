@@ -1,0 +1,11 @@
+<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" version="1.1" preserveAspectRatio="xMidYMid meet">
+ <title>logout-line</title>
+
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_5" stroke="null">
+   <path d="m1.77056,2.00765l13.24138,0l0,8.11035l1.65517,0l0,-8.11035a1.65517,1.65517 0 0 0 -1.65517,-1.65517l-13.24138,0a1.65517,1.65517 0 0 0 -1.65517,1.65517l0,19.86207a1.65517,1.65517 0 0 0 1.65517,1.65517l13.24138,0a1.65517,1.65517 0 0 0 1.65517,-1.65517l-14.89655,0l0,-19.86207z" class="clr-i-outline clr-i-outline-path-1" id="svg_1" fill="#ffffff" stroke="null"/>
+   <path d="m19.28228,11.34282a0.82759,0.82759 0 0 0 -1.1669,1.1669l2.79724,2.73931l-12,0a0.82759,0.82759 0 0 0 -0.82759,0.82759a0.82759,0.82759 0 0 0 0.82759,0.82759l12,0l-2.79724,2.86345a0.82759,0.82759 0 1 0 1.1669,1.1669l4.8331,-4.8l-4.8331,-4.79172l0,-0.00002z" class="clr-i-outline clr-i-outline-path-2" id="svg_2" fill="#ffffff" stroke="null"/>
+  </g>
+ </g>
+</svg>

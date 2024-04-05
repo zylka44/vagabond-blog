@@ -1,0 +1,66 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/consts.scss';
+
+$title-color: $currant-extra;
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 60vw;
+  box-shadow: inset 0px 0px 1000px rgba(46, 50, 60, 1);
+  background-image: url();
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100vw auto;
+  margin-bottom: 12vw;
+  display: flex;
+
+  .titleWrapper {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+
+    .titleContainer {
+      width: 400px;
+      height: 200px;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      transform: translateX(-50%) translateY(-50%);
+
+      .uptitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .uptitleLine {
+          width: 54px;
+          height: 2px;
+          background: $title-color;
+        }
+
+        .uptitleLabel {
+          font-family: 'Gilroy';
+          font-size: 14px;
+          font-weight: 900;
+          color: $title-color;
+          letter-spacing: 4px;
+          text-transform: uppercase;
+          margin: 0 20px;
+        }
+      }
+
+      .title {
+        font-size: 80px;
+        font-family: 'ChronicleDisplay', serif;
+        letter-spacing: -1px;
+        line-height: 75px;
+        text-align: center;
+        color: $title-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@import './styles/colors.scss';
+
+html,
+body {
+  font-family: 'Gilroy', sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0;
+  background-color: $basic-darker;
+  color: $snow;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  padding: 0;
+}
+
+/* firefox */
+button:hover,
+button:active,
+button:focus,
+button::-moz-focus-inner {
+  outline: none;
+  border: 0;
+}
+
+img {
+  width: 100%;
+}
+
+textarea,
+input,
+button {
+  outline: none;
+  font-family: 'Gilroy', sans-serif;
+}

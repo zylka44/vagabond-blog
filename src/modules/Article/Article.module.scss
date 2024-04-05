@@ -1,0 +1,50 @@
+@import '../../styles/colors.scss';
+@import '../../styles/consts.scss';
+
+.container {
+  margin: 0 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  .mainPicture {
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .body {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-160px);
+    background-color: $basic-darker;
+    width: 1000px;
+    padding: 0 40px;
+
+    .articleHeader {
+      width: 1000px;
+      margin: 20px 0;
+      padding: 20px 0;
+      border: 1px solid transparent;
+
+      .title {
+        font-size: $font-very-big;
+        font-family: 'ChronicleDisplay', serif;
+      }
+    }
+
+    .chunks {
+      .chunk {
+        min-height: 40px;
+        margin: 20px 0;
+        padding: 20px 0;
+        border: 1px solid transparent;
+      }
+    }
+  }
+}

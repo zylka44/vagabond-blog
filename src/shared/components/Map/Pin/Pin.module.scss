@@ -1,0 +1,56 @@
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/consts.scss';
+
+.container {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $currant-extra;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  &.hovered {
+    transform: scale(4, 4);
+  }
+  &.notHovered {
+    transform: scale(1, 1);
+  }
+
+  .photoContainer {
+    position: absolute;
+    top: -7vw;
+    left: -7vw;
+    width: 6vw;
+    height: 6vw;
+    border: 1px solid black;
+    background-color: white;
+    visibility: hidden;
+    z-index: 10;
+
+    .photo {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+
+    .label {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #00000077;
+      color: #e0e0e0;
+      font-size: 10px;
+      text-align: center;
+      backdrop-filter: blur(0.5px);
+    }
+  }
+}

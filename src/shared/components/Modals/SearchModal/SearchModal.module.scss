@@ -1,0 +1,59 @@
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/consts.scss';
+
+.mainContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .tripTypes {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 20px 0;
+
+      .tripType {
+        display: flex;
+        align-items: center;
+
+        input {
+          height: 20px;
+          width: 20px;
+        }
+      }
+    }
+
+    .results {
+      height: 80vh;
+      margin: 20px 0;
+      padding: 10px;
+      overflow: scroll;
+      width: 1000px;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 50px;
+      padding: 10px;
+    }
+
+    .noResult {
+      height: 236px;
+      margin: 20px 0;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $snow-dirty;
+    }
+  }
+}

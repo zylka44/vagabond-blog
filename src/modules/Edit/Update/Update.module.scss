@@ -1,0 +1,80 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/consts.scss';
+
+.container {
+  padding-bottom: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .mainPicture {
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-160px);
+    background-color: $basic-darker;
+    width: 1000px;
+    padding: 0 40px;
+
+    .header {
+      width: 1000px;
+      transform: translateX(-20px);
+    }
+
+    .chunks {
+      width: 1000px;
+      transform: translateX(-20px);
+
+      .addChunk {
+        width: 1102px;
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        opacity: 0;
+        padding: 8px 0;
+        border: 1px dashed transparent;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 1;
+          border-color: $snow-dirty;
+        }
+      }
+    }
+
+    .addSection {
+      display: flex;
+      align-items: center;
+
+      .chunksTypes {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 800px;
+        transition: all 0.2s ease-in-out;
+        transform: scaleX(95%);
+        transform-origin: top left;
+        opacity: 0;
+        margin-left: 40px;
+
+        &.chunksSelectorHidden {
+          transform: scaleX(95%);
+          opacity: 0;
+        }
+
+        &.chunksSelectorVisible {
+          transform: scaleX(100%);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

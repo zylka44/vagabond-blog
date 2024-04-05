@@ -1,0 +1,85 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/consts.scss';
+
+.container {
+  width: 1000px;
+  margin-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+
+  .contentContainer {
+    position: relative;
+    width: 100%;
+
+    .number {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 180px;
+      font-weight: 900;
+      opacity: 0.1;
+      line-height: 140px;
+    }
+
+    .content {
+      margin: 60px;
+      margin-bottom: 0;
+
+      .title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        cursor: pointer;
+
+        .titleLine {
+          width: 54px;
+          height: 2px;
+          background: $currant-extra;
+          margin-right: 20px;
+        }
+
+        .titleLabel {
+          font-family: 'Gilroy';
+          font-size: 14px;
+          font-weight: 900;
+          color: $currant-extra;
+          letter-spacing: 4px;
+          text-transform: uppercase;
+        }
+      }
+
+      .subtitle {
+        font-size: 48px;
+        font-family: 'ChronicleDisplay', serif;
+        line-height: 58px;
+        margin-bottom: 20px;
+        cursor: pointer;
+      }
+
+      .description {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 20px;
+        text-align: justify;
+      }
+
+      .redirect {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        font-size: 14px;
+        color: $currant-extra;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .pictures {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+  }
+}

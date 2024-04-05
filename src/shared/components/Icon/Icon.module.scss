@@ -1,0 +1,24 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/consts.scss';
+
+.icon {
+  &.xs {
+    width: 12px;
+    height: 12px;
+  }
+
+  &.s {
+    width: 28px;
+    height: 28px;
+  }
+
+  &.m {
+    width: 48px;
+    height: 48px;
+  }
+
+  &.l {
+    width: 60px;
+    height: 60px;
+  }
+}

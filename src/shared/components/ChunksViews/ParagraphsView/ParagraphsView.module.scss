@@ -1,0 +1,30 @@
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/consts.scss';
+
+.container {
+  width: 100%;
+  .paragraphs {
+    width: 100%;
+
+    .paragraphPicture {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      .paragraphView {
+        width: 49%;
+      }
+
+      &.marginRight {
+        margin-right: 20px;
+      }
+
+      &.marginLeft {
+        margin-left: 20px;
+      }
+
+      .pictureView {
+        width: 49%;
+      }
+    }
+  }
+}

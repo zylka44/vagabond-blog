@@ -1,0 +1,30 @@
+@import '../../../../../styles/colors.scss';
+@import '../../../../../styles/consts.scss';
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .pictureD {
+    width: 49%;
+    position: relative;
+
+    .image {
+      width: 100%;
+      height: auto;
+    }
+
+    .description {
+      font-size: $font-basic;
+    }
+
+    .location {
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+      padding: 8px 8px 0 0;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/consts.scss';
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Gilroy', sans-serif;
+  color: $snow-little-dirty;
+  filter: brightness(100%);
+
+  &.s {
+    font-size: $font-small;
+    height: 24px;
+    padding: 0 8px;
+
+    .icon {
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  &.m {
+    font-size: $font-bigger;
+    height: 32px;
+    padding: 0 12px;
+
+    .icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &.basic {
+    background-color: $basic-color;
+  }
+
+  &.basicDarker {
+    background-color: $basic-darker;
+  }
+
+  &.color {
+    background-color: $currant-extra;
+  }
+
+  &.transparent {
+    background-color: transparent;
+  }
+
+  &.transparentColor {
+    color: $currant-extra;
+  }
+
+  &:hover {
+    border-color: $snow-little-dirty;
+    filter: brightness(120%);
+  }
+}

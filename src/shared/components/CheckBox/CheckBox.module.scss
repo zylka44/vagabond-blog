@@ -1,0 +1,18 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/consts.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  .box {
+    width: 20px;
+    height: 20px;
+    border: 1px solid $snow;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

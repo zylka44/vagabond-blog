@@ -1,0 +1,25 @@
+@import '../../../../../styles/colors.scss';
+@import '../../../../../styles/consts.scss';
+
+.container {
+  position: relative;
+
+  .editor {
+    .info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .save {
+    position: absolute;
+    width: 32px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    right: 4px;
+    bottom: 0;
+  }
+}

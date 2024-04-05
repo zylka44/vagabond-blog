@@ -1,0 +1,84 @@
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/consts.scss';
+
+.container {
+  width: 100%;
+  min-height: 40px;
+  margin: 20px 0;
+  padding: 20px 80px 20px 20px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  position: relative;
+
+  &:hover {
+    border: 1px dashed $snow-dirty;
+
+    .delete,
+    .move {
+      visibility: visible;
+    }
+  }
+
+  &.isBeingEdited {
+    border: 1px solid $snow-dirty;
+    cursor: default;
+  }
+
+  .typeSelector {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    opacity: 0;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    .chunkType {
+      font-size: 12px;
+      font-style: italic;
+      cursor: pointer;
+
+      &.typeSelected {
+        font-weight: 900;
+        cursor: default;
+      }
+    }
+  }
+
+  .delete {
+    position: absolute;
+    width: 32px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    right: 40px;
+    top: 0;
+    visibility: hidden;
+  }
+
+  .move {
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+  }
+
+  .save {
+    position: absolute;
+    width: 32px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    right: 4px;
+    bottom: 0;
+  }
+}

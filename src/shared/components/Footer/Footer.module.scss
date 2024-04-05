@@ -1,0 +1,32 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/consts.scss';
+
+.container {
+  background-color: $basic-color;
+  width: 100vw;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  .picture {
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .content {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .title {
+      font-family: 'ChronicleDisplay', serif;
+      font-size: $font-bigger;
+    }
+  }
+}

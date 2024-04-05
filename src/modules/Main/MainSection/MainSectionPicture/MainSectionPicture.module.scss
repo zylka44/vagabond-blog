@@ -1,0 +1,173 @@
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/consts.scss';
+
+.container {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+
+  .mainPicture {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1);
+
+    &.mainHovered {
+      transform: scale(0.9);
+    }
+
+    &.mainNotHovered {
+      transform: scale(1);
+    }
+  }
+
+  .coverPicture {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(-100%);
+    display: flex;
+    justify-content: center;
+
+    &.coverHovered {
+      transform: translateX(0);
+    }
+
+    &.coverNotHovered {
+      transform: translateX(-100%);
+    }
+
+    &.pic0 {
+      justify-content: flex-start;
+    }
+
+    &.pic1 {
+      justify-content: center;
+    }
+
+    &.pic2 {
+      justify-content: end;
+    }
+  }
+
+  .pictureLabelContainer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 140px;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(0);
+    transform-origin: top left;
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+
+    .pictureLabelBackground {
+      position: relative;
+      background-color: $basic-darker;
+      width: 160px;
+      height: 60px;
+      transition: all 0.5s ease-in-out;
+      transform-origin: top;
+      opacity: 0.8;
+      overflow: hidden;
+      padding: 20px;
+    }
+
+    .pictureLabelFramework {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 160px;
+      height: 60px;
+      border: 20px solid $basic-darker;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .labelBackgroundHovered {
+      height: 260px;
+      opacity: 1;
+    }
+
+    .labelBackgroundNotHovered {
+      height: 60px;
+      opacity: 0.8;
+    }
+
+    .labelBackgroundOtherHovered {
+      height: 60px;
+      opacity: 0.3;
+    }
+
+    .pictureLabel {
+      position: absolute;
+      width: 160px;
+      height: 260px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden;
+
+      .title {
+        text-align: center;
+        margin-bottom: 8px;
+        font-family: 'ChronicleDisplay', serif;
+      }
+
+      .date {
+        font-size: $font-small;
+      }
+
+      .description {
+        font-size: $font-small;
+        text-align: justify;
+        margin-top: 12px;
+        transition: all 1s ease-in-out;
+        transform: translateY(100px);
+
+        &.descriptionNotHovered {
+          opacity: 0;
+          transform: translateY(100px);
+        }
+
+        &.descriptionHovered {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
+    }
+
+    &.labelContainerHovered {
+      transform: translateY(-210px);
+    }
+
+    &.labelContainerNotHovered {
+      transform: translateY(0);
+    }
+
+    .showMore {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding-top: 10px;
+      background: linear-gradient(#39403e99, #39403eff);
+      text-align: center;
+      font-size: $font-small;
+      color: $currant-extra;
+    }
+  }
+
+  img {
+    width: auto;
+    height: 100%;
+  }
+}

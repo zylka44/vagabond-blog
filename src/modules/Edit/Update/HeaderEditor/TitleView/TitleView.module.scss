@@ -1,0 +1,17 @@
+@import '../../../../../styles/colors.scss';
+@import '../../../../../styles/consts.scss';
+
+.container {
+  position: relative;
+
+  .title {
+    font-size: $font-very-big;
+  }
+
+  .published {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-style: italic;
+  }
+}

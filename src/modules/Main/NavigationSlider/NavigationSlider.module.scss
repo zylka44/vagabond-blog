@@ -1,0 +1,59 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/consts.scss';
+
+.container {
+  position: fixed;
+  top: 50vh;
+  right: 60px;
+  display: flex;
+  gap: 24px;
+  z-index: 1;
+  transform: translateY(-50%);
+
+  .navItems {
+    width: 32px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+
+    .navItem {
+      height: 45px;
+      font-size: 14px;
+      font-weight: 900;
+      color: #ffffff88;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      cursor: pointer;
+
+      &:hover {
+        color: #ffffffbb;
+      }
+
+      &.active {
+        color: $snow;
+      }
+    }
+  }
+
+  .slider {
+    position: relative;
+
+    .track {
+      width: 2px;
+      height: 180px;
+      background-color: $snow;
+      opacity: 0.5;
+    }
+
+    .indicator {
+      position: absolute;
+      top: 0;
+      width: 2px;
+      height: 45px;
+      background-color: $snow;
+      transition: transform 0.3s;
+    }
+  }
+}

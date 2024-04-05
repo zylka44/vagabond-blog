@@ -1,0 +1,9 @@
+<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none">
+
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_1" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#ffffff" d="m9,22l6,0c5,0 7,-2 7,-7l0,-6c0,-5 -2,-7 -7,-7l-6,0c-5,0 -7,2 -7,7l0,6c0,5 2,7 7,7z"/>
+  <path id="svg_2" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#ffffff" d="m12,15.5c1.933,0 3.5,-1.567 3.5,-3.5c0,-1.933 -1.567,-3.5 -3.5,-3.5c-1.933,0 -3.5,1.567 -3.5,3.5c0,1.933 1.567,3.5 3.5,3.5z"/>
+  <path id="svg_3" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#ffffff" d="m17.6361,7l0.0116,0"/>
+ </g>
+</svg>

@@ -1,0 +1,33 @@
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/consts.scss';
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  font-size: $font-small;
+  cursor: pointer;
+
+  .itemLabel {
+    color: $snow-little-dirty;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    width: 12px;
+    height: 12px;
+    filter: brightness(80%);
+  }
+
+  &:hover {
+    .itemLabel {
+      color: $snow;
+    }
+
+    img {
+      filter: none;
+    }
+  }
+}

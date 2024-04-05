@@ -1,0 +1,23 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/consts.scss';
+
+.input {
+  background-color: transparent;
+  border: 1px solid $snow;
+  filter: brightness(80%);
+  height: 28px;
+  padding: 8px;
+  color: $snow;
+  font-family: 'Gilroy', sans-serif;
+  font-size: $font-basic;
+  width: 100%;
+  border-radius: 2px;
+
+  &.noBorder {
+    border: 0;
+  }
+
+  &.uppercase {
+    text-transform: uppercase;
+  }
+}
